@@ -36,3 +36,56 @@ Clone the repository:
 ```bash
 git clone https://github.com/xchen34/dslr.git
 cd dslr
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+## How to Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the analysis scripts
+
+```bash
+python describe.py dataset_train.csv
+python histogram.py dataset_train.csv
+python scatter_plot.py dataset_train.csv
+python pair_plot.py dataset_train.csv
+```
+
+### Train the logistic regression model
+
+```bash
+python logreg_train.py dataset_train.csv
+```
+
+### Run predictions on the test dataset
+
+```bash
+python logreg_predict.py dataset_test.csv
+```
+
+## Visualizations
+
+### Data Distribution
+![Histogram](images/all_histograms.png)
+
+### Feature Relationships
+![Pair Plot](images/pair_plot_keep.png)
+
+### Correlation Example
+![Scatter](images/scatter_top_6_corr_pairs.png)
+
+### Training Process
+![Loss Curve](images/loss_history_Gryffindor.png)
+
+## Notes
+
+This project is part of my learning journey in data analysis and machine learning fundamentals.
+
+It focuses on understanding algorithms from scratch rather than relying on high-level libraries.
